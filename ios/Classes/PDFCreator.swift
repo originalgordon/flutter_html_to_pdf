@@ -19,7 +19,7 @@ class PDFCreator {
         
         // create pdf context and draw each page
         let pdfData = NSMutableData()
-        UIGraphicsBeginPDFContextToData(pdfData, .zero, nil)
+        UIGraphicsBeginPDFContextToData(pdfData, page, nil)
         
         for i in 0..<renderer.numberOfPages {
             UIGraphicsBeginPDFPage()
